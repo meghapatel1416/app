@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import MyApp from './MyApp';
+import ParentC from './ParentC';
+import FullFormFunction from './FullFormFunction';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <ParentC /> */}
+    <FullFormFunction/>
   </React.StrictMode>
 );
 
