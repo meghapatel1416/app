@@ -48,7 +48,7 @@ export default function MyForm(props) {
 
     let d = [...props.arraydata];
 
-    //   d.push({ ...form, id: d.length + 1 });
+    //   d.push({ ...form, id: d.length + 1 }); for unique id
 
     if(props.id  >0)
     {

@@ -46,18 +46,14 @@ export default function FullFormFunction() {
   var  validateNumber = evt => {
         var theEvent = evt || window.event;
     
-        // Handle paste
-      
-          // Handle key press
+        // for mobile number
+       // Handle key press
           var key = theEvent.keyCode || theEvent.which;
         //  alert(key);
     
           key = String.fromCharCode(key);
     
-          
-        
-
-        if(key)
+           if(key)
         var regex = /[0-9]|\./;
         if (!regex.test(key)) {
           theEvent.returnValue = false;
@@ -97,12 +93,13 @@ export default function FullFormFunction() {
         }
          
         setState({...state,form: formObj });
+        //we don't need validation for zip coad(next line)
         if (Object.keys(formErrors).includes(name) == false) return;
         
         let formErrorsObj = {};
         if (name === "password" || name === "confirmPassword") {
           let refValue = formObj[
-            name === "pa7ssword" ? "confirmPassword" : "password"
+            name === "password" ? "confirmPassword" : "password"
           ];
           const errorMsg = validateField(name, value, refValue);
           formErrorsObj = { ...formErrors, [name]: errorMsg };

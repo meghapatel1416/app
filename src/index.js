@@ -6,12 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import MyApp from './MyApp';
 import ParentC from './ParentC';
 import FullFormFunction from './FullFormFunction';
+import MyParent1 from './MyParent1';
+import ShowMoreTextToggle from './ShowMoreTextToggle';
+import TODOEXp2 from './TODOEXp2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <ParentC /> */}
     <FullFormFunction/>
+    {/* <ParentC /> */}
+    {/* <ShowMoreTextToggle  text="This is the javascript This is the javascript This is the javascript THis is the javascript This is the javascript THi s is the react"/> */}
   </React.StrictMode>
 );
 
