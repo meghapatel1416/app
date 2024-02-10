@@ -93,7 +93,7 @@ export default function FullFormFunction() {
         }
          
         setState({...state,form: formObj });
-        //we don't need validation for zip coad(next line)
+        //we don't need validation for zip code(next line)
         if (Object.keys(formErrors).includes(name) == false) return;
         
         let formErrorsObj = {};

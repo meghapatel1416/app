@@ -13,8 +13,9 @@ import TODOEXp2 from './TODOEXp2';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FullFormFunction/>
-    {/* <ParentC /> */}
+    
+    
+    <TODOEXp2 />
     {/* <ShowMoreTextToggle  text="This is the javascript This is the javascript This is the javascript THis is the javascript This is the javascript THi s is the react"/> */}
   </React.StrictMode>
 );
